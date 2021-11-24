@@ -1,0 +1,49 @@
+@import url(../../node_modules/antd/dist/antd.less);
+
+@primary-color: #fff;
+@success-color: @primary-color;
+@warning-color: #fbb325;
+@error-color: #ff4d4d;
+@highlight-color: @error-color;
+@border-radius-base: 2px;
+@link-color: @primary-color;
+@info-color: @link-color;
+@border-color-base: #e6e6e6;
+@border-color-split: @border-color-base;
+//disabled
+@disabled-color: #e6e6e6;
+@disabled-bg: #f2f2f2;
+//input
+@input-height-base: 36px;
+@input-height-lg: 50px;
+@input-height-sm: 28px;
+//text
+@heading-color: #333333;
+@text-color: #666666;
+@text-color-secondary: #999999;
+// 注意后面有个空格和上面的disabled-color不一样
+@disabled-color: #c0c0c0;
+//btn
+@btn-height-base: 36px;
+@btn-height-lg: 50px;
+@btn-height-sm: 28px;
+//font-family
+@font-family: PingFang SC, Microsoft YaHei Light, Microsoft YaHei, arial, sans-serif;
+
+//以上的less变量可以覆盖默认的antd样式，打包后将以css3变量的形式存在，全局生效
+
+:root {
+  --bg-color: @primary-color;
+  --main-color: @primary-color;
+  --main-color2: #fff;
+  --main-bg: rgb(255, 255, 255);
+  --logo-border-color: rebeccapurple;
+
+  --header-height: 68px;
+  --content-padding: 10px 20px;
+
+  --base-line-height: 1.428571429;
+  --transition-duration: 0.35s;
+  --external-link: "external link";
+  --margin-top: calc(2vh + 20px);
+}
