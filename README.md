@@ -39,7 +39,7 @@
 ```
 // --t 主题名，默认 se
 // --v antd版本, 默认 4.17.0
-yarn build --t=se --v=4.13.0
+yarn theme --t=se --v=4.13.0
 
 ```
 

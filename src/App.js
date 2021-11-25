@@ -1,47 +1,39 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Select, Form, Input, Button, Radio } from "antd";
-import "antd/dist/antd.less"; // or 'antd/dist/antd.less'
-const { Option } = Select;
 
 const onChange = (e) => {
   var link_list = document.getElementsByTagName("link");
   if (link_list) {
     for (var i = 0; i < link_list.length; i++) {
       // 要找到所有link中rel属性值包括style的，也就是包括stylesheet和alternate stylesheet;
-      if (link_list[i].getAttribute("rel").indexOf("style") != -1) {
-        link_list[i].href = "http://localhost:8000/" + e.target.value + ".css";
+      if (link_list[i].getAttribute("id") === "theme_link") {
+        link_list[i].href = "https://cdn.jsdelivr.net/npm/webstyles-antd-css3-template/dist/" + e.target.value + ".css";
       }
     }
   }
 };
 
 const onFinish = (values: any) => {
-  console.log("Success:", values);
+  console.log("onFinish:", values);
 };
 
 const onFinishFailed = (errorInfo: any) => {
-  console.log("Failed:", errorInfo);
+  console.log("onFinishFailed:", errorInfo);
 };
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p className="testClass">
-          当然最原始的你还可以使用window.setTimout()或者window.setInterval()通过不断更新元素的状态位置等来实现动画，前提是画面的更新频率要达到每秒60次才能让肉眼看到流畅的动画效果。现在又多了一种实现动画的方案，那就是还在草案当中的
-          window.requestAnimationFrame()方法。
-        </p>
-        <p className="testClass2">
-          当然最原始的你还可以使用window.setTimout()或者window.setInterval()通过不断更新元素的状态位置等来实现动画，前提是画面的更新频率要达到每秒60次才能让肉眼看到流畅的动画效果。现在又多了一种实现动画的方案，那就是还在草案当中的
-          window.requestAnimationFrame()方法。
-        </p>
-
+        <h1>webstyles-antd-css3-template</h1>
         {/* <Select defaultValue="default" style={{ width: 120 }} onChange={handleChange}>
           <Option value="default">Default</Option>
           <Option value="dark">Dark</Option>
           <Option value="schneider">Schneider</Option>
         </Select> */}
-
+      </header>
+      <div className={"App-content"}>
         <Form
           name="basic"
           className="test_form"
@@ -53,20 +45,16 @@ function App() {
           onFinishFailed={onFinishFailed}
           autoComplete="off"
         >
-          <Form.Item
-            label="主题"
-            name="username"
-            rules={[{ required: true, message: "Please input your username!" }]}
-          >
-            <Radio.Group onChange={onChange}>
-              <Radio value={"default"}>default</Radio>
-              <Radio value={"dark"}>dark</Radio>
-              <Radio value={"schneider"}>schneider</Radio>
+          <Form.Item label="主题" name="username" rules={[{ required: true, message: "Please input your username!" }]}>
+            <Radio.Group onChange={onChange} defaultValue={"default@4.17.0"}>
+              <Radio value={"default@4.17.0"}>default</Radio>
+              <Radio value={"se@4.17.0"}>schneider</Radio>
+              <Radio value={"dark@4.17.0"}>dark</Radio>
             </Radio.Group>
           </Form.Item>
 
           <Form.Item
-            label="Username"
+            label="Theme Name"
             name="username"
             rules={[{ required: true, message: "Please input your username!" }]}
           >
@@ -81,10 +69,13 @@ function App() {
             <Input.Password />
           </Form.Item>
         </Form>
+      </div>
 
-        <div style={{ margin: "10px" }}></div>
+      <div className={"App-footer"}>
         <Button type="primary">Primary Button</Button>
-      </header>
+        <Button>Default Button</Button>
+        <Button type="dashed">Dashed Button</Button>
+      </div>
     </div>
   );
 }
