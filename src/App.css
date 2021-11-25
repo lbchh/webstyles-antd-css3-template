@@ -12,7 +12,7 @@
 }
 .App-header h1{
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(--m-primary-color);
 }
 
 .App-content {
@@ -40,9 +40,4 @@
   padding: 20px;
   width: 450px;
 }
-.testClass {
-  color: var(--main-color);
-}
-.testClass2 {
-  color: var(--main-color2);
-}
+

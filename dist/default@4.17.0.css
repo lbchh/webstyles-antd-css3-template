@@ -25492,6 +25492,7 @@ div.ant-typography-edit-content.ant-typography-rtl {
 }
 :root {
   --primary-color: #1890ff;
+  --m-primary-color: #1890ff;
   --success-color: #52c41a;
   --warning-color: #faad14;
   --error-color: #ff4d4f;

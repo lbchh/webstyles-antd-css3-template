@@ -6,9 +6,12 @@ const onChange = (e) => {
   var link_list = document.getElementsByTagName("link");
   if (link_list) {
     for (var i = 0; i < link_list.length; i++) {
+      console.log("????????????????????",link_list[i])
       // 要找到所有link中rel属性值包括style的，也就是包括stylesheet和alternate stylesheet;
       if (link_list[i].getAttribute("id") === "theme_link") {
         link_list[i].href = "https://cdn.jsdelivr.net/npm/webstyles-antd-css3-template/dist/" + e.target.value + ".css";
+        
+        return
       }
     }
   }
@@ -46,7 +49,7 @@ function App() {
           autoComplete="off"
         >
           <Form.Item label="主题" name="username" rules={[{ required: true, message: "Please input your username!" }]}>
-            <Radio.Group onChange={onChange} defaultValue={"default@4.17.0"}>
+            <Radio.Group onChange={onChange} initialValues={"default@4.17.0"}>
               <Radio value={"default@4.17.0"}>default</Radio>
               <Radio value={"se@4.17.0"}>schneider</Radio>
               <Radio value={"dark@4.17.0"}>dark</Radio>

@@ -4,17 +4,47 @@
 //以上的less变量可以覆盖默认的antd样式，打包后将以css3变量的形式存在，全局生效
 
 :root {
-  --bg-color: @primary-color;
-  --main-color: @primary-color;
-  --main-color2: #fff;
-  --main-bg: rgb(255, 255, 255);
-  --logo-border-color: rebeccapurple;
+  //全局颜色
+  --primary-color: @primary-color;
+  --m-primary-color: @primary-color;
+  --success-color: @success-color;
+  --warning-color: @warning-color;
+  --error-color: @error-color;
+  --highlight-color: @highlight-color;
+  --border-radius-base: @border-radius-base;
+  --link-color: @link-color;
+  --info-color: @info-color;
+  --border-color-base: @border-color-base;
+  --border-color-split: @border-color-base;
 
+  //disabled
+  --disabled-color: @disabled-color;
+  --disabled-bg: @disabled-bg;
+  // menu
+  --menu-dark-bg: @menu-dark-bg;
+  //input
+  --input-height-base: @input-height-base;
+  --input-height-lg: @input-height-lg;
+  --input-height-sm: @input-height-sm;
+  //text
+  --heading-color: @heading-color;
+  --text-color: @text-color;
+  --text-color-secondary: @text-color-secondary;
+  --disabled-color: @disabled-color;
+  //btn
+  --btn-height-base: @btn-height-base;
+  --btn-height-lg: @btn-height-lg;
+  --btn-height-sm: @btn-height-sm;
+  --btn-shadow: @btn-shadow;
+  --btn-primary-shadow: @btn-primary-shadow;
+  --btn-text-shadow: @btn-text-shadow;
+  //font-family
+  --font-family: @font-family;
+
+  // other
   --header-height: 68px;
-  --content-padding: 10px 20px;
-
+  --content-padding: 20px;
   --base-line-height: 1.428571429;
   --transition-duration: 0.35s;
   --external-link: "external link";
-  --margin-top: calc(2vh + 20px);
 }

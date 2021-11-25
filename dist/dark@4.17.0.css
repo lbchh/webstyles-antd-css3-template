@@ -25775,15 +25775,36 @@ div.ant-typography-edit-content.ant-typography-rtl {
   padding: 0;
 }
 :root {
-  --bg-color: #177ddc;
-  --main-color: #177ddc;
-  --main-color2: #fff;
-  --main-bg: #ffffff;
-  --logo-border-color: rebeccapurple;
+  --primary-color: #177ddc;
+  --m-primary-color: #177ddc;
+  --success-color: #49aa19;
+  --warning-color: #d89614;
+  --error-color: #a61d24;
+  --highlight-color: #a61d24;
+  --border-radius-base: 2px;
+  --link-color: #177ddc;
+  --info-color: #177ddc;
+  --border-color-base: #434343;
+  --border-color-split: #434343;
+  --disabled-bg: rgba(255, 255, 255, 0.08);
+  --menu-dark-bg: #1f1f1f;
+  --input-height-base: 32px;
+  --input-height-lg: 40px;
+  --input-height-sm: 24px;
+  --heading-color: rgba(255, 255, 255, 0.85);
+  --text-color: rgba(255, 255, 255, 0.85);
+  --text-color-secondary: rgba(255, 255, 255, 0.45);
+  --disabled-color: rgba(255, 255, 255, 0.3);
+  --btn-height-base: 32px;
+  --btn-height-lg: 40px;
+  --btn-height-sm: 24px;
+  --btn-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+  --btn-primary-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  --btn-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --header-height: 68px;
-  --content-padding: 10px 20px;
+  --content-padding: 20px;
   --base-line-height: 1.42857143;
   --transition-duration: 0.35s;
   --external-link: "external link";
-  --margin-top: calc(2vh + 20px);
 }
