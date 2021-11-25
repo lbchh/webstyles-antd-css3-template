@@ -1,11 +1,12 @@
 {
   "name": "webstyles-antd-css3-template",
-  "version": "1.0.0",
+  "version": "1.1.6",
   "description": "根据指定antd版本生成css3主题文件的",
-  "main": "build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./build.js"
+    "build": "react-scripts build",
+    "theme": "node ./build.js",
+    "start": "react-scripts start"
   },
   "repository": {
     "type": "git",
@@ -22,13 +23,31 @@
   "bugs": {
     "url": "https://github.com/lbchh/webstyles-antd-css3-template/issues"
   },
-  "homepage": "https://github.com/lbchh/webstyles-antd-css3-template#readme",
+  "files": [
+    "dist",
+    "build"
+  ],
+  "homepage": ".",
   "dependencies": {
-    "antd": "4.17.0",
+    "antd": "3.26.20",
     "less": "3.13.1",
     "less-plugin-clean-css": "^1.5.1",
     "shelljs": "^0.8.4",
-    "webpack": "^5.64.1",
-    "yargs-parser": "^21.0.0"
+    "yargs-parser": "^21.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
