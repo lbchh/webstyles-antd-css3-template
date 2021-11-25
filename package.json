@@ -1,6 +1,6 @@
 {
   "name": "webstyles-antd-css3-template",
-  "version": "1.2.3",
+  "version": "1.2.7",
   "description": "根据指定antd版本生成css3主题文件的",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,10 +24,13 @@
     "url": "https://github.com/lbchh/webstyles-antd-css3-template/issues"
   },
   "files": [
-    "dist"
+    "dist",
+    "themes",
+    "build.js",
+    "package"
   ],
   "dependencies": {
-    "antd": "4.17.0",
+    "antd": "4.13.0",
     "less": "3.13.1",
     "less-plugin-clean-css": "^1.5.1",
     "react": "^17.0.2",
