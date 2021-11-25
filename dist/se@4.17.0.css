@@ -25520,6 +25520,10 @@ div.ant-typography-edit-content.ant-typography-rtl {
   --info-color: #3dcd58;
   --border-color-base: #d9d9d9;
   --border-color-split: #d9d9d9;
+  --popover-background: #fff;
+  --popover-customize-border-color: #d9d9d9;
+  --body-background: #fff;
+  --component-background: #fff;
   --disabled-bg: #f2f2f2;
   --menu-dark-bg: #3dcd58;
   --input-height-base: 36px;

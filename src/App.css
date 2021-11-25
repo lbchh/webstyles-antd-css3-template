@@ -8,19 +8,19 @@
   height: var(--header-height);
   line-height: var(--header-height);
   background-color:  var(--main-bg-color);
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-color-base);
 }
 .App-header h1{
   font-weight: bold;
-  color: var(--m-primary-color);
+  color: var(--primary-color);
 }
 
 .App-content {
-  background-color: #fff;
+  background-color: var(--body-background);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-color-base);
   flex-grow:1;
 }
 

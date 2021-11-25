@@ -9,7 +9,7 @@ const onChange = (e) => {
       console.log("????????????????????",link_list[i])
       // 要找到所有link中rel属性值包括style的，也就是包括stylesheet和alternate stylesheet;
       if (link_list[i].getAttribute("id") === "theme_link") {
-        link_list[i].href = "https://cdn.jsdelivr.net/npm/webstyles-antd-css3-template/dist/" + e.target.value + ".css";
+        link_list[i].href = "https://cdn.jsdelivr.net/npm/webstyles-antd-css3-template@1.2.3/dist/" + e.target.value + ".css";
         
         return
       }

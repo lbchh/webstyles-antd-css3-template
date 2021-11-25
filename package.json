@@ -1,6 +1,6 @@
 {
   "name": "webstyles-antd-css3-template",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "根据指定antd版本生成css3主题文件的",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
